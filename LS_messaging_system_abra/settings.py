@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "lsassignmentserver.postgres.database.azure.com",
+    "django-messaging-system.onrender.com",
     "*",
 ]
 
