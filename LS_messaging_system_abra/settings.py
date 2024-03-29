@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "lsassignmentserver.postgres.database.azure.com",
-    ".azurewebsites.net/",
+    "leonsoshinskiassignment.azurewebsites.net",
 ]
 
 
