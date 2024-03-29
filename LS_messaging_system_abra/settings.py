@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "lsassignmentserver.postgres.database.azure.com",
-    "leonsoshinskiassignment.azurewebsites.net",
+    "*",
 ]
 
 
@@ -158,6 +158,6 @@ if DEBUG:
     CSRF_COOKIE_SECURE = False
     SESSION_COOKIE_SECURE = False
 else:
-    SECURE_SSL_REDIRECT = False
+    SECURE_SSL_REDIRECT = True
     CSRF_COOKIE_SECURE = True
     SESSION_COOKIE_SECURE = True
