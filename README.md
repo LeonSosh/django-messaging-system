@@ -5,3 +5,5 @@ This system allows for sending, receiving, and managing messages with features l
 Authentication is handled via tokens to ensure secure access to endpoints.
 
 Heroku doesn't offer a free tier as of late 2022, so I used render.com which is free and simple to set up
+
+Database is PostgreSQL on Azure 
