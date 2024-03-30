@@ -17,10 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from LS_messages.views import home_view  # Import the view here
+from LS_messages.views import home_view
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/messages/", include("LS_messages.urls")),
-    path("", home_view, name="home"),  # Add this line to route the root URL to your new view
+    path("", home_view, name="home"),
 ]
