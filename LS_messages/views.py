@@ -7,6 +7,11 @@ from rest_framework.permissions import IsAuthenticated
 
 from .models import Message
 from .serializers import MessageSerializer
+from django.http import HttpResponse
+
+
+def home_view(request):
+    return HttpResponse("homepage works")
 
 
 class SendMessage(APIView):
