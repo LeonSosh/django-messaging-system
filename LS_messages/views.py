@@ -11,7 +11,7 @@ from django.http import HttpResponse
 
 
 def home_view(request):
-    return HttpResponse("homepage works")
+    return HttpResponse("Welcome! not much here at the moment")
 
 
 class SendMessage(APIView):
