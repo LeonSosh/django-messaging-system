@@ -6,6 +6,10 @@ from rest_framework.authtoken.models import Token
 
 
 class Message(models.Model):
+    """
+    Represents a message sent from one user to another.
+    Includes a subject, the message body, creation date, and read status.
+    """
 
     sender = models.ForeignKey(User, related_name="sent_messages", on_delete=models.CASCADE)
     receiver = models.ForeignKey(User, related_name="received_messages", on_delete=models.CASCADE)
@@ -17,5 +21,8 @@ class Message(models.Model):
 
 @receiver(post_save, sender=User)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
+    """
+    Signal to create an auth token for each new user.
+    """
     if created:
         Token.objects.create(user=instance)
